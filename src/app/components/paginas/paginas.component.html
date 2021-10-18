@@ -1,0 +1,145 @@
+ <app-navbar [nota]="notaFinal" [preguntasBuenas]="preguntasBuenas" [contadornav]="contador"></app-navbar>
+<section id="container">
+   
+   <div >
+
+      <form [formGroup]="form">
+         <div class="pg" [ngStyle]="{'display':contador==1 || contador==11 ? 'block' : 'none'}">
+
+            <p> 1- Para que sirve la Etiqueta P ?</p> <br>
+
+            <input type="radio" formControlName="p1" id="opcion1" value="1"> <label for="1">Para Guardar parafos</label><br><br>
+            <input type="radio" formControlName="p1" id="opcion2" value="2"> <label for="2" id="label">Para Formularios</label><br><br>
+            <input type="radio" formControlName="p1" id="opcion3" value="3"> <label for="3">Input</label>
+
+            <br>
+            <br>
+            <div id="resultado1"></div>
+         </div>
+
+         <div class="pg" [ngStyle]="{'display':contador==2 || contador==11 ? 'block' : 'none'}">
+            <p> 2- Un input de Type = Date sirve para ?</p> <br>
+           
+            <input type="radio" formControlName="p2" id="opcion2" value="2"> <label for="2" id="label">Fechas</label><br><br> 
+            <input type="radio" formControlName="p2" id="opcion3" value="3"> <label for="3">caracteres</label> <br><br> 
+            <input type="radio" formControlName="p2" id="opcion1" value="1"> <label for="1">Numeros</label>
+           
+            <br>
+            <br>
+
+
+            <div id="resultado2"></div>
+         </div>
+     
+      <div class="pg" [ngStyle]="{'display':contador==3 || contador==11 ? 'block' : 'none'}">
+         <p>3- Un input de Type = text sirve para ?</p> <br>
+       
+         <input type="radio" formControlName="p3" id="opcion2" value="2"> <label for="2" id="label">Taxtos</label><br><br>
+         <input type="radio" formControlName="p3" id="opcion3" value="3"> <label for="3">Numeros</label><br><br>
+         <input type="radio" formControlName="p3" id="opcion1" value="1"> <label for="1">Fechas</label>
+    
+         <br>
+         <br>
+     
+
+         <div id="resultado3"></div>
+      </div>
+
+      <div class="pg" [ngStyle]="{'display':contador==4 || contador==11 ? 'block' : 'none'}">
+         <p>4- Un input de Type = number sirve para ?</p> <br>
+        
+            <input type="radio" formControlName="p4" id="opcion1" value="1"> <label for="1">Fechas</label><br><br>
+            <input type="radio" formControlName="p4" id="opcion2" value="2"> <label for="2" id="label">Taxtos</label><br><br>
+            <input type="radio" formControlName="p4" id="opcion3" value="3"> <label for="3">Numeros</label>
+    
+         <br>
+         <br>
+        
+
+         <div id="resultado4"></div>
+      </div>
+
+      <div class="pg" [ngStyle]="{'display':contador==5  || contador==11 ? 'block' : 'none'}">
+  
+            <p>5- En CSS el comando que sirve para ponerle un color al texto es ?</p> <br>
+            <input type="radio" formControlName="p5" id="opcion1" value="1"> <label for="1">color</label><br><br>
+            <input type="radio" formControlName="p5" id="opcion2" value="2"> <label for="2" id="label"> margin-left</label><br><br>
+            <input type="radio" formControlName="p5" id="opcion3" value="3"> <label for="3"> background-color</label>
+      
+         <br>
+       
+    
+
+         <div id="resultado5"></div>
+      </div>
+
+      <div class="pg" [ngStyle]="{'display':contador==6 || contador==11 ? 'block' : 'none'}">
+  
+            <p>6- En CSS el comando que sirve para ponerle un color al fondo es ?</p> <br>
+            <input type="radio" formControlName="p6" id="opcion1" value="1"> <label for="1">color</label><br><br>
+            <input type="radio" formControlName="p6" id="opcion2" value="2"> <label for="2" id="label"> margin-left</label><br><br>
+            <input type="radio" formControlName="p6" id="opcion3" value="3"> <label for="3"> background-color</label>
+ 
+         <br>
+        
+
+         <div id="resultado6"></div>
+      </div>
+
+      <div class="pg" [ngStyle]="{'display':contador==7 || contador==11 ? 'block' : 'none'}">
+         <p>7- En JavaScript el document.getElementById() sirve para llamar ?</p> <br>
+        
+            <input type="radio" formControlName="p7" id="opcion1" value="1"> <label for="1">una Clase</label><br><br>
+            <input type="radio" formControlName="p7" id="opcion2" value="2"> <label for="2" id="label">una funcion</label><br><br>
+            <input type="radio" formControlName="p7" id="opcion3" value="3"> <label for="3">un id</label>
+        
+         <br>
+        
+
+         <div id="resultado7"></div>
+      </div>
+
+      <div class="pg" [ngStyle]="{'display':contador==8 || contador==11 ? 'block' : 'none'}">
+         <p>8- En JavaScript el document.getElementById() sirve para llamar ?</p> <br>
+      
+            <input type="radio" formControlName="p8" id="opcion1" value="1"> <label for="1">una Clase</label><br><br>
+            <input type="radio" formControlName="p8" id="opcion2" value="2"> <label for="2" id="label">una funcion</label><br><br>
+            <input type="radio" formControlName="p8" id="opcion3" value="3"> <label for="3">un id</label>
+    
+         <br>
+      
+
+         <div id="resultado8"></div>
+      </div>
+
+      <div class="pg" [ngStyle]="{'display':contador==9 || contador==11 ? 'block' : 'none'}">
+         <p>9- En JavaScript un ciclo seria?</p> <br>
+        
+            <input type="radio" formControlName="p9" id="opcion1" value="1"> <label for="1">for</label><br><br>
+            <input type="radio" formControlName="p9" id="opcion2" value="2"> <label for="2" id="label">funcion</label><br><br>
+            <input type="radio" formControlName="p9" id="opcion3" value="3"> <label for="3">onclick</label>
+  
+         <br>
+         <div id="resultado9"></div>
+      </div>
+
+      <div class="pg" [ngStyle]="{'display':contador==10 || contador==11 ? 'block' : 'none'}">
+         <p>10- En JavaScript cual no es un ciclo?</p> <br>
+
+            <input type="radio" formControlName="p10" id="opcion1" value="1"> <label for="1">for</label><br><br>
+            <input type="radio" formControlName="p10" id="opcion2" value="2"> <label for="2" id="label">forEcht</label><br><br>
+            <input type="radio" formControlName="p10" id="opcion3" value="3"> <label for="3">let variable</label>
+       
+         <br>
+         <br>
+
+         <div id="resultado10"></div>
+      </div>
+      </form>
+      <div class="enlaces"  >
+         <a href="#" (click)="anterior()" [ngStyle]="{'display':contador==1 || contador==11 ? 'none' : 'block'}"  >Anterior</a>
+          <a href="#" (click)="siguiente()" [ngStyle]="{'display':contador==10 || contador==11 ? 'none' : 'block'}">Siguente</a>
+          <a href="#" (click)="terminar()" [ngStyle]="{'display':contador==10 ? 'block' : 'none'}">Terminar</a>
+      </div>
+
+   </div>

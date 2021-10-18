@@ -1,0 +1,39 @@
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: Arial;
+    
+}
+
+header{
+    height: 100px;
+    background-color: rgb(4, 161, 17);
+
+    img{
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+
+    h4{
+        float: left;
+         width:10%;
+         color: floralwhite;
+         font-size: medium;
+         margin-top: 50px;
+    }
+    h2{
+   
+        color: floralwhite;
+        margin-top: 0%;   
+        text-align: left; 
+        
+   }
+   p{
+     float: right;
+     margin-top: 50px;
+     color: #fff;
+ 
+   }
+}
+

@@ -1,0 +1,25 @@
+<aside *ngIf="!nombre && !apellidos">
+    <form [formGroup]="form" (ngSubmit)="save($event)" class="col-md-2">
+        <label for="nombre">Nombres</label>
+        <input type="text" class="form-control" placeholder="Ingrese Nombres" formControlName="name">
+        <div *ngIf="nameField.errors && nameField.touched">
+            <p class="color ms-2" *ngIf="nameField.hasError('required')">
+                Es un campo requerido
+            </p>
+        </div>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" class="form-control" placeholder="Ingrese Apellidos" formControlName="apellidos">
+        <div *ngIf="apellidosField.errors && apellidosField.touched">
+            <p class="color ms-2" *ngIf="apellidosField.hasError('required')">
+                Es un campo requerido
+            </p>
+        </div>
+        <button type="submit" [disabled]="form.invalid" >INICIAR</button>
+        <div >
+           {{nombre}}
+        </div>
+    </form>
+</aside>
+<div   *ngIf="nombre && apellidos">
+    <app-paginas></app-paginas>
+</div>
