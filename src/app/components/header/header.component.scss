@@ -37,3 +37,31 @@ header{
    }
 }
 
+ 
+@media screen and ( max-width:1998px){
+    header{
+        h4{
+            float: left;
+             width:10%;
+           
+             margin-top: 40px;
+        }
+       
+    }
+    
+ 
+}
+
+@media screen and ( max-width:512px){
+    header{
+        h4{
+            float: left;
+             width:10%;
+           
+             margin-top: 20px;
+        }
+       
+    }
+    
+ 
+}

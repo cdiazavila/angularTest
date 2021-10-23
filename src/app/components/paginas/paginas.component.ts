@@ -22,6 +22,7 @@ export class PaginasComponent implements OnInit {
   punto9:number;
   punto10:number;
   preguntasBuenas:number;
+  estado:string;
 
   constructor(private formBuilder: FormBuilder) {  
     this.form = new FormGroup({})
@@ -30,6 +31,7 @@ export class PaginasComponent implements OnInit {
     this.notaFinal=0;
     this.punto1= this.punto2=this.punto3=this.punto4=this.punto5=this.punto6=this.punto7=this.punto8=this.punto9=this.punto10=0;
    this.preguntasBuenas=0;
+   this.estado="";
   }
 
   ngOnInit(): void {
@@ -52,6 +54,10 @@ export class PaginasComponent implements OnInit {
 
    
   }
+
+  cambiarContador(contadorp:number){
+  this.contador=contadorp;
+  }
   siguiente(){
    this.contador++;
    
@@ -59,6 +65,7 @@ export class PaginasComponent implements OnInit {
   anterior(){
     this.contador--;
   }
+
   terminar(){
     this.contador++;
     console.log(this.form.value);
@@ -103,5 +110,11 @@ export class PaginasComponent implements OnInit {
     
     this.preguntasBuenas=(this.punto1+this.punto2+this.punto3+this.punto4+this.punto5+this.punto6+
       this.punto7+this.punto8+this.punto9+this.punto10);
+
+      if(this.notaFinal>=3){
+        this.estado="Aprobo";
+      }else{
+        this.estado="Reprobo";
+      }
   }
 }

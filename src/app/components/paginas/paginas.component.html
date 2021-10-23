@@ -1,7 +1,7 @@
- <app-navbar [nota]="notaFinal" [preguntasBuenas]="preguntasBuenas" [contadornav]="contador"></app-navbar>
+ <app-navbar [nota]="notaFinal" [preguntasBuenas]="preguntasBuenas" [contadornav]="contador" [estado]="estado"></app-navbar>
 <section id="container">
-   
-   <div >
+ 
+   <div class="preguntas">
 
       <form [formGroup]="form">
          <div class="pg" [ngStyle]="{'display':contador==1 || contador==11 ? 'block' : 'none'}">
@@ -143,3 +143,5 @@
       </div>
 
    </div>
+   <app-panel (contadorp)=" cambiarContador($event)" [ngStyle]="{'display':contador==11 ? 'none' : 'block'}"></app-panel>
+</section>

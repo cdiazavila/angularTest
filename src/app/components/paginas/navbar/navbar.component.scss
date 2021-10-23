@@ -1,9 +1,12 @@
-nav #indicador-preguntas{
-    margin-left: 300px;
-    top:-4px;
-}
+nav{
+    display: flex;
+     flex-direction: column;
 
+
+} 
 #formulario #mensaje .mensajeError{
     color:red;
     text-align: center;
 }
+
+

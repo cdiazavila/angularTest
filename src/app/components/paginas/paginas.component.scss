@@ -48,4 +48,23 @@
         display: flex;
         flex-direction: row;
     }
-   
+    @media screen and ( max-width:150px){
+       
+        
+        selection#container{
+            width: 100%;
+            
+        }
+    }
+    @media screen and ( max-width:360px){
+       
+        
+        section{
+            .preguntas {
+         margin-left: 2px;
+         width: auto;
+            
+        }
+        }
+       
+    }

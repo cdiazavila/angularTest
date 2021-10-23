@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PaginasComponent } from './components/paginas/paginas.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/paginas/navbar/navbar.component';
+import { PanelComponent } from './components/paginas/panel/panel.component';
 
 
 
@@ -19,7 +20,8 @@ import { NavbarComponent } from './components/paginas/navbar/navbar.component';
     FooterComponent,
     PaginasComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    PanelComponent
   
   ],
   imports: [
